@@ -118,8 +118,15 @@
 	left: 0;
 	right: 0;
 	margin: auto;
+        max-width: 100%;
 	width: auto;
-	height: 100%;
+	height: auto;
+}
+@media (max-width: 600px) { /* Adjust the max-width as needed */
+    #img {
+        max-width: 80%; /* Limits the image width to 80% of the container */
+        height: auto;    /* Keeps the aspect ratio */
+    }
 }
 
 #Txt{
